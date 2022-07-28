@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Pokemon-Game/static/css/main.b49d0dd0.css",
-    "main.js": "/Pokemon-Game/static/js/main.61b86fb0.js",
+    "main.js": "/Pokemon-Game/static/js/main.293659cb.js",
     "index.html": "/Pokemon-Game/index.html",
     "main.b49d0dd0.css.map": "/Pokemon-Game/static/css/main.b49d0dd0.css.map",
-    "main.61b86fb0.js.map": "/Pokemon-Game/static/js/main.61b86fb0.js.map"
+    "main.293659cb.js.map": "/Pokemon-Game/static/js/main.293659cb.js.map"
   },
   "entrypoints": [
     "static/css/main.b49d0dd0.css",
-    "static/js/main.61b86fb0.js"
+    "static/js/main.293659cb.js"
   ]
 }
