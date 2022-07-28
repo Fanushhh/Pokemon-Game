@@ -1,26 +1,44 @@
+import React, {Component} from "react";
 import Pokecard from "./Pokecard";
+import "./Pokedex.css";
 
-class Pokecard extends Component{
+class Pokedex extends Component{
+    
     render(){
-        const defaultProps=[
-            {id: 4, name: 'Charmander', type: 'fire', base_experience: 62},
-            {id: 7, name: 'Squirtle', type: 'water', base_experience: 63},
-            {id: 11, name: 'Metapod', type: 'bug', base_experience: 72},
-            {id: 12, name: 'Butterfree', type: 'flying', base_experience: 178},
-            {id: 25, name: 'Pikachu', type: 'electric', base_experience: 112},
-            {id: 39, name: 'Jigglypuff', type: 'normal', base_experience: 95},
-            {id: 94, name: 'Gengar', type: 'poison', base_experience: 225},
-            {id: 133, name: 'Eevee', type: 'normal', base_experience: 65} 
-        ]
+        
+        
 
-        for(let i = 0;i<defaultPorps.length; i++){
-            return <Pokecard
-            id={defaultProps[i].id}
-            name={defaultProps[i].name}
-            description={defaultProps[i].type}
-            exp={defaultProps[i].base_experience}
-            />
+        // for(let i = 0;i < defaultProps.length; i++){
+        //     let imgID = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + defaultProps[i].id + ".png";
+        //     return (<Pokecard
+        //     id= {imgID}
+        //     name={defaultProps[i].name}
+        //     description={defaultProps[i].type}
+        //     exp={defaultProps[i].base_experience}
+        //     />);
+        // }
+        let calcZero = (x) => (x <= 999? `00${x}`.slice(-3):x)
+        let title;
+        if(this.props.isWinner){
+            title = <h1 className = "Pokedex-winner">Winning hand</h1>;
+        }else{
+            title = <h1 className = "Pokedex-loser">Losing hand</h1>;
         }
+        return(
+        <div className="Pokedex">
+            {title}
+            <h4>Total experience : {this.props.exper}</h4>
+            <div className="Pokedex-item">
+                {this.props.pokemon.map((item) =>
+                <Pokecard
+                id = {"https://assets.pokemon.com/assets/cms2/img/pokedex/detail/"  + calcZero(item.id) + ".png"}
+                name={item.name}
+                description={item.type}
+                exp={item.base_experience}
+                />)};
+                
+            </div>
+        </div>);
     }
 }
 

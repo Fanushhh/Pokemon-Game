@@ -1,0 +1,20 @@
+.Pokedex{
+  text-align: center;
+}
+
+.Pokedex-title{
+    color: grey;
+}
+
+.Pokedex-item{  
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+    margin-left: 100px;
+}
+
+.Pokedex-winner{
+  color: green;
+}
+.Pokedex-loser{
+  color: red;
+}

@@ -1,14 +1,19 @@
 import React, {Component} from "react";
-import ReactDOM from "react-dom/client";
+
 import Pokedex from "./Pokedex";
+import Pokegame from "./Pokegame";
 
 class App extends Component{
     render(){
-        <Pokedex />
+        return (
+            <div className="App">
+            <Pokegame />
+            </div>
+        );
+        
     }
 }
 
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+export default App;
