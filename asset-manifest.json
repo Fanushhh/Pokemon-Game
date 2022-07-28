@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Fanushhh/Pokemon-Game/static/css/main.b49d0dd0.css",
+    "main.js": "/Fanushhh/Pokemon-Game/static/js/main.61b86fb0.js",
+    "index.html": "/Fanushhh/Pokemon-Game/index.html",
+    "main.b49d0dd0.css.map": "/Fanushhh/Pokemon-Game/static/css/main.b49d0dd0.css.map",
+    "main.61b86fb0.js.map": "/Fanushhh/Pokemon-Game/static/js/main.61b86fb0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b49d0dd0.css",
+    "static/js/main.61b86fb0.js"
+  ]
+}
